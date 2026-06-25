@@ -94,6 +94,18 @@ echo Installing Playwright Chromium browser...
 echo Browser installation complete.
 echo.
 
+echo Logging into NotebookLM...
+%TARGET_DIR%\Scripts\notebooklm.exe login
+echo.
+
+echo Verifying NotebookLM authentication...
+%TARGET_DIR%\Scripts\notebooklm.exe auth check --test --json
+echo.
+
+echo Listing NotebookLM notebooks...
+%TARGET_DIR%\Scripts\notebooklm.exe list
+echo.
+
 echo Setup complete. Python is ready in the '%TARGET_DIR%' directory.
 
 pause

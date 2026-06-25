@@ -1,0 +1,3 @@
+notebooklm-py[browser]==0.7.2
+python-dotenv
+
