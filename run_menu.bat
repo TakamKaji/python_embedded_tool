@@ -10,6 +10,11 @@ chcp 65001 >nul
 rem ポータブルPython環境の読み込み (ループの外で1回だけ実行する)
 call "%~dp0setenv.bat"
 
+rem NotebookLMログインの実施
+echo.
+echo 🔑 NotebookLMにログイン中...
+call notebooklm login
+
 :MAIN_MENU
 cls
 echo ======================================================
